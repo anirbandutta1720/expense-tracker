@@ -1,0 +1,8 @@
+.left-block {
+    background: #f9f9f9;
+    height: calc(100vh - 56px);
+}
+.right-block {
+    background: #fff;
+    height: calc(100vh - 56px);
+}

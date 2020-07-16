@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validate snapshot of create expense 1`] = `
+<div
+  className="create-expense container-fluid"
+>
+  <h3
+    className="mb-3"
+  >
+     Add new expense 
+  </h3>
+  <form
+    className=""
+    noValidate={true}
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+        htmlFor="txtcategory"
+      >
+        Category
+      </label>
+      <input
+        className="form-control"
+        id="txtcategory"
+        name="category"
+        onChange={[Function]}
+        placeholder="Enter Category"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+        htmlFor="txtAmount"
+      >
+        Amount
+      </label>
+      <input
+        className="form-control"
+        id="txtAmount"
+        name="amount"
+        onChange={[Function]}
+        placeholder="Enter Amount"
+        required={true}
+        type="number"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+        htmlFor="txtDate"
+      >
+        Date
+      </label>
+      <input
+        className="form-control"
+        id="txtDate"
+        name="date"
+        onChange={[Function]}
+        placeholder="Select Date"
+        required={true}
+        type="date"
+      />
+    </div>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      type="submit"
+    >
+      Save
+    </button>
+  </form>
+</div>
+`;
