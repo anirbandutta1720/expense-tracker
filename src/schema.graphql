@@ -1,0 +1,33 @@
+schema {
+  query: ExpenseQueryType
+  mutation: Mutation
+}
+
+"""Exposes a URL that specifies the behaviour of this scalar."""
+directive @specifiedBy(
+  """The URL that specifies the behaviour of this scalar."""
+  url: String!
+) on SCALAR
+
+input CreateExpenseInput {
+  category: String
+  amount: Float
+  date: String
+}
+
+type Expense {
+  id: ID
+  category: String
+  amount: Float
+  date: String
+}
+
+type ExpenseQueryType {
+  expense(id: ID): Expense
+  expenses: [Expense]
+}
+
+type Mutation {
+  addExpense(input: CreateExpenseInput!): Expense
+}
+

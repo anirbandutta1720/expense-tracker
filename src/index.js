@@ -14,17 +14,15 @@ import {
 } from "react-router-dom";
 
 ReactDOM.render(
-  <Provider store={configureStore()}>
-    <React.StrictMode>
-      <Router>
-        <Switch>
-          <Route path="/">
-            <App />
-          </Route>
-        </Switch>
-      </Router>
-    </React.StrictMode>
-  </Provider>,
+  <React.StrictMode>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <App />
+        </Route>
+      </Switch>
+    </Router>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
